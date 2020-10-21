@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Transaction = () => {
+export const Transaction = ({ transaction }) => {
     return (
         <li className="minus">
-        Cash <span>-$400</span><button class="delete-btn">x</button>
+        {transaction.text} <span>-$400</span><button className="delete-btn">x</button>
     </li>
     )
 }
